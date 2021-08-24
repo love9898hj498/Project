@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="a.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" 
+    integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" 
+    crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <header class="header" id="header">
+        <video autoplay loop muted plays-inline id="backVideo" preload="auto"> 
+            <source src="word.mp4" type="video/mp4">
+        </video>
+        <div class="navbar">
+            <img src="images/logo.png" alt="" class="logo">
+        </div>
+        
+        <div class="content">
+            <small>Welcome to our</small>
+            <h1>威爾蒂<br> 水族大飯店</h1>
+            
+            <div class="btn" id="playBtn">
+                <img src="images/play.png" id="icon">當地風景
+            </div>
+        </div>
+
+        <div class="side-bar">
+            <img src="images/menu.png" class="menu" id="menu">
+
+            <div class="social-links">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-twitter"></i>
+            </div>
+
+            <div class="useful-links">
+                <audio  src="1.mp3"  controls loop hidden id="audio"></audio>
+                <a href="javascript:playPause();"> 
+                    <img src="images/stopaudio.svg" alt="" id="audioimg">
+                </a>
+                <!-- <audio src="yt1s.com - Chillstep  TheDiabolicalWaffle  Precious.mp3"  type="audio/mp3"loop autoplay></audio> -->
+            </div>
+        </div>
+
+        <div id="bubbles-content">
+            <div class="bubbles">
+                <img src="images/bubble.png" alt="">
+                <img src="images/bubble.png" alt="">
+                <img src="images/bubble.png" alt="">
+                <img src="images/bubble.png" alt="">
+                <img src="images/bubble.png" alt="">
+            </div>
+        </div>
+
+
+        <div class="menu-inner" >
+            <a class="closeBtn"><i class="fas fa-times fa-3x"></i></a>
+            <ul class="nav">
+                <li><a href="#header">首頁</a></li>
+                <li><a href="#article">飯店介紹</a></li>
+                <li><a href="#hotelbar">房型</a></li>
+                <li><a href="#restaurant-bar">餐廳&食物</a></li>
+            </ul>
+        </div>
+
+    </header>
+<!-- ---------------header end-------------------- -->
+
+<!-- article contentPhone start -->
+
+    <article class="article" id="article">
+        <section class="inner">
+            <h2 class="article-title">A SMILE WARMS HEARTS<br>感恩萬物之母</h2>
+            <p>自2021年第一家威爾蒂水族大飯店正式開幕，喜愛大海的創辦人Mr.殭屍，想建造一個海底旅館，讓客人們感受身在亞特蘭提斯的感覺。  威爾蒂水族大飯店會定期舉辦與海洋有關的活動，像是沙灘海洋音樂節、水上競技、沙灘排球等等，優勝著還有豐富獎金，威爾蒂水族大飯店將會是你度假的首選。</p>   
+        </section>
+
+
+        <!-- <div id="app"></div> -->
+            <!-- <a id="angleleft"><i class="fas fa-angle-left fa-5x"></i></a></div> -->
+            <!-- <a id="angleright"><i class="fas fa-angle-right fa-5x"></i></a></div> -->
+            <!-- <div id="contentPhone"></div></div> -->
+        <!-- </div></div> -->                               <!-- 放在這裡面會超出原容器 待釐清問題-->
+    </article>
+
+
+    <div id="app">
+        <a id="angleleft"><i class="fas fa-angle-left fa-5x"></i></a>
+        <a id="angleright"><i class="fas fa-angle-right fa-5x"></i></a>
+        <div id="contentPhone"></div>
+    </div>
+<!-- article contentPhone end -->
+
+<!-- hotelbar start -->
+
+
+    <section class="hotelbar" id="hotelbar">
+        <h2 class="hotelbar-title">房型</h2>
+        
+        
+        <div class="row">
+            
+            <div class="col-2">
+                <img src="images/hotel1.png" alt="">
+                <div class="hotelbar-txt">
+                    <h3>漂流房</h3>
+                    <p>超級貼近大自然，價格相當親民，體驗遇難時獨自漂流的感覺，入住與退房會有專人開機動船運送</p>
+                </div>
+            </div>
+
+            <div class="col-2">
+                <img src="images/hotel2.png" alt="">
+                <div class="hotelbar-txt">
+                    <h3>輕功水上漂房</h3>
+                    <p>體驗踩在水上，房內全用檜木打造，浴缸為木造小船，附船槳。</p>
+                </div>
+            </div>
+
+            <div class="col-2">
+                <img src="images/hotel3.png" alt="">
+                <div class="hotelbar-txt">
+                    <h3>總統套房</h3>
+                    <p>大面積強化玻璃，房內環境打造舒適放鬆，相較其他房型，較無壓力感。</p>
+                </div>
+            </div>
+
+            <div class="col-2">
+                <img src="images/hotel4.png" alt="">
+                <div class="hotelbar-txt">
+                    <h3>海底隧道房</h3>
+                    <p>蔚藍的海底世界，就呈現在你眼前。</p>
+                </div>
+            </div>
+
+            <div class="col-2">
+                <img src="images/hotel5.png" alt="">
+                <div class="hotelbar-txt">
+                    <h3>潛水艇深潛房</h3>
+                    <p>模仿潛水艇淺入深海的環境，營造房內明亮度較暗的感覺，所設計的房型。</p>
+                </div>
+            </div>
+
+            <div class="col-2">
+                <img src="images/hotel6.png" alt="">
+                <div class="hotelbar-txt">
+                    <h3>浮潛房</h3>
+                    <p>打造浮潛的環境，明亮度較高。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- hotelbar end -->
+
+    <!-- restaurant star -->
+
+    <div class="restaurant-bar" id="restaurant-bar">
+        <h2 class="restaurant-tittle">餐廳&食物</h2>
+        <p>超棒的餐廳，超棒的餐點</p>
+        <div class="video-content">
+            <div class="video">
+                <video class="restaurant-video" src="video/restaurant1.mp4" autoplay loop muted></video>
+            </div>
+            <div class="video">
+                <video class="restaurant-video" src="video/restaurant2.mp4" autoplay loop muted></video>
+            </div>
+        </div>
+        <h2 class="restaurant-h2">今日餐點</h2>
+        <div class="food-content">
+            <div class="food-bar">
+                <a href="#" class="fas fa-heart"></a>
+                <img src="images/food1.png" alt="">
+                <h3>痛風鍋</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt, nemo?</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="food-btn">add to cart</a>
+                <span>$1000TW</span>
+            </div>
+            
+            <div class="food-bar">
+                <a href="#" class="fas fa-heart"></a>
+                <img src="images/food2.png" alt="">
+                <h3>生猛海鮮盤</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt, nemo?</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="food-btn">add to cart</a>
+                <span>$1000TW</span>
+            </div>
+
+            <div class="food-bar">
+                <a href="#" class="fas fa-heart"></a>
+                <img src="images/food3.png" alt="">
+                <h3>異國鮮蝦炒飯</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt, nemo?</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="food-btn">add to cart</a>
+                <span>$1000TW</span>
+            </div>
+
+            <div class="food-bar">
+                <a href="#" class="fas fa-heart"></a>
+                <img src="images/food4.png" alt="">
+                <h3>海鮮義麵</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt, nemo?</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="food-btn">add to cart</a>
+                <span>$1000TW</span>
+            </div>
+
+            <div class="food-bar">
+                <a href="#" class="fas fa-heart"></a>
+                <img src="images/food5.png" alt="">
+                <h3>天婦羅</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt, nemo?</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="food-btn">add to cart</a>
+                <span>$1000TW</span>
+            </div>
+
+            <div class="food-bar">
+                <a href="#" class="fas fa-heart"></a>
+                <img src="images/food6.png" alt="">
+                <h3>嫩煎牛排佐季節時蔬</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt, nemo?</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="food-btn">add to cart</a>
+                <span>$1000TW</span>
+            </div>
+
+            <div class="food-bar">
+                <a href="#" class="fas fa-heart"></a>
+                <img src="images/food7.png" alt="">
+                <h3>芥末焗烤土司</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt, nemo?</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="food-btn">add to cart</a>
+                <span>$1000TW</span>
+            </div>
+
+            <div class="food-bar">
+                <a href="#" class="fas fa-heart"></a>
+                <img src="images/food8.png" alt="">
+                <h3>草莓菲力牛</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt, nemo?</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="food-btn">add to cart</a>
+                <span>$1000TW</span>
+            </div>
+
+            <div class="food-bar">
+                <a href="#" class="fas fa-heart"></a>
+                <img src="images/food9.png" alt="">
+                <h3>番茄海鮮濃湯</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt, nemo?</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="food-btn">add to cart</a>
+                <span>$1000TW</span>
+            </div>
+
+            <div class="food-bar">
+                <a href="#" class="fas fa-heart"></a>
+                <img src="images/food10.png" alt="">
+                <h3>蟹蟹您</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt, nemo?</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="food-btn">add to cart</a>
+                <span>$1000TW</span>
+            </div>
+
+            <div class="food-bar">
+                <a href="#" class="fas fa-heart"></a>
+                <img src="images/food11.png" alt="">
+                <h3>蔥爆牛肉</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt, nemo?</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="food-btn">add to cart</a>
+                <span>$1000TW</span>
+            </div>
+
+            <div class="food-bar">
+                <a href="#" class="fas fa-heart"></a>
+                <img src="images/food12.png" alt="">
+                <h3>番茄海鮮義大利麵</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt, nemo?</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="food-btn">add to cart</a>
+                <span>$1000TW</span>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- restaurant end -->
+
+
+    <div class="footer-img"></div>
+
+    <footer class="footer">
+        <span>  2021 練習用網頁 非營利無意侵權聲明</span>
+    </footer>
+
+
+
+    <div class="loader-container">
+        <img src="images/loader.gif" alt="loading">
+    </div>
+
+
+
+
+
+
+    <script src="a.js"></script>
+</body>
+</html>
