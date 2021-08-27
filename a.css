@@ -16,22 +16,27 @@
     box-sizing: border-box;
     border: none;
     scroll-behavior: smooth;  /*頁面滑順捲動效果*/
+
 }
-*::selection{               /*html頁面反白呈現橘色*/
+*::selection{               
+    /* html頁面反白呈現橘色 */
     background: var(--light);
 
 }
 
-html::-webkit-scrollbar{        /*滾輪頁*/
+html::-webkit-scrollbar{        
+    /* 滾輪頁 */
     width: 5px;
 }
 
-html::-webkit-scrollbar-track{  /*滾輪頁的背景顏色*/
+html::-webkit-scrollbar-track{  
+    /* 滾輪頁的背景顏色 */
     background: linear-gradient(#00545d, #000);;
 }
 
 html::-webkit-scrollbar-thumb{
-    background: var(--light);   /*滾輪頁的滾輪顏色*/
+    background: var(--light);   
+    /* 滾輪頁的滾輪顏色 */
 }
 
 
@@ -71,7 +76,6 @@ body{
 }
 
 .navbar{
-    width: 85%;
     height: 15%;
     margin: auto;
     top:3%;
@@ -114,7 +118,8 @@ h1{
     position: fixed;
     right: 0;
     top: 0;
-    z-index: 99;  /*要設定層級 否則下拉後按鈕都會失效*/
+    z-index: 99;  
+    /*要設定層級 否則下拉後按鈕都會失效*/
 }
 .menu{
     
@@ -457,10 +462,6 @@ a#angleright{
     margin: auto;
 }
 
-.col-2 img{
-    width: 568px;
-    height: 378px;
-}
 
 .col-2 h3{
     font-size: 28px;
@@ -693,7 +694,71 @@ h3{
 
 
 
-@media only screen and (max-width: 900px){ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:1024px) { 
+    .navbar{
+        top: 70px;
+        left: 0;
+    }
+    .navbar img{
+        width: 100px;
+    }
+    .content h1{
+        font-size: 50px;
+    }
+    .side-bar{
+        top: 0;
+        left: 0;
+        height: 55px;
+        width: 100%;
+    }
+    .side-bar .menu{
+        margin-top: 12px;
+    }
+    .social-links{
+        display: flex;
+        right: 50%;
+        transform: translateX(50%);
+        top: 0;
+        width: 150px;
+    }
+    .social-links i{
+        margin: 5px 15px 0 0;
+        font-size: 20px;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+
+    }
+    .menu{
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 10px;
+    }
+
+    .useful-links{
+        top: 0;
+        right: 0;  
+        text-align: end;
+        padding-right: 5px;
+    }
+    .useful-links img{
+        margin-top: 5px;       
+    }
+
     .video{   
         width: 80%;
         margin: 25px;
@@ -702,7 +767,33 @@ h3{
         object-fit: cover;
         height: auto;
     }
+ 
+    /* article start */
+    .article .article-title{
+        font-size: 34px;
+    }
+    .inner{
+        width: 80%;
+        margin: auto;
+        padding: 15px;
+    }
+    #app{
+        height: 50vh;
+    }
+    #app #contentPhone{
+        width: 75%;
+        height: 90%;
+    }
 
+    #app #angleleft,
+    #app #angleright{
+        top: 45%;
+        font-size: 10px;
+    }
+
+    .loader-container img{
+        width: 500px;
+    }
 }
 
 
@@ -710,7 +801,74 @@ h3{
 
 
 
+@media(max-width:360px){
+    .content h1{
+        font-size: 35px;
+    }
+    .btn{
+        width: 150px;
+        padding: 5px 10px;
+        font-size: 18px;
+    }
+    .btn img{
+        width: 20px;;
+    }
+
+    .article .article-title{
+        font-size: 30px;
+    }
 
 
+    #app{
+        height: 30vh;
+        margin-bottom: 20px;
+    }
 
+    .inner{
+        width: 90%;
+    }
 
+    #app #contentPhone{
+        width: 90%;
+        height: 100%;
+    }
+
+    #app #angleleft,
+    #app #angleright{
+        top: 40%;
+        font-size: 10px;
+    }
+    #app #angleleft{
+        left: 5%;
+    }
+    #app #angleright{
+        right: 5%;
+    }
+
+    .col-2{
+        width: 300px;
+    }
+    .col-2 .hotelbar-txt{
+        width: 100%;
+    }
+
+    .food-bar{
+        width: 150px;
+    }
+    .food-bar img{
+        height: 150px;
+    }
+
+    .loader-container img{
+        width: 200px;
+    }
+
+    .menu-inner{
+        text-align: center;
+        width: 100%;
+    }
+
+    .menu-inner ul.nav li a {
+        padding: 0;
+    }
+}
