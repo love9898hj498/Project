@@ -801,7 +801,7 @@ h3{
 
 
 
-@media(max-width:360px){
+@media(max-width:480px){
     .content h1{
         font-size: 35px;
     }
