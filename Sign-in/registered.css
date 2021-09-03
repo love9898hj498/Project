@@ -145,7 +145,7 @@
     .logo{
         position: absolute;
         z-index: 999;
-        left: 80%;
+        left: 75%;
     }
     .logo img{
         width: 60px;

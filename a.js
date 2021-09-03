@@ -10,8 +10,8 @@ playBtn.addEventListener('click',() => {
     bubblescontent.style.display = "none"  
 
     if(backVideo.paused){  //.paused 如果影片停止
-        // backVideo.play();
-        backVideo.load()
+        backVideo.play();
+        // backVideo.load();  //重新載入撥放
         icon.src = "images/pause.png";
     }else{
         backVideo.pause();
