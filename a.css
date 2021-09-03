@@ -70,18 +70,18 @@ body{
     height: 100%;
     object-fit: cover;  
 }
-.logo{
-    width: 150px;
-    cursor: pointer;  
-}
 
-.navbar{
+.logo{
     height: 15%;
-    margin: auto;
     top:3%;
     left: 7.5%;    
     position: absolute;
 }
+
+.logo img{
+    width: 150px;
+}
+
 .btn{
     width: 180px;
     display: flex;
@@ -289,6 +289,19 @@ h1{
     color: var(--light);
 }
 
+.menu-inner .sign{
+    padding-left: 50px;
+    position: absolute;
+    width: 100%;
+    bottom: 30px;
+}
+.menu-inner .sign:hover i{
+    color: var(--light);
+}
+.menu-inner .sign i{
+    font-size: 30px;
+    color: var(--white);
+}
 
 /* header end  */
 
@@ -708,11 +721,11 @@ h3{
 
 
 @media(max-width:1024px) { 
-    .navbar{
+    .logo{
         top: 70px;
         left: 0;
     }
-    .navbar img{
+    .logo img{
         width: 100px;
     }
     .content h1{
@@ -870,5 +883,12 @@ h3{
 
     .menu-inner ul.nav li a {
         padding: 0;
+    }
+    .menu-inner .sign{
+        transform: translateX(-50%);
+        padding: 0;
+    }
+    .menu-inner .sign i{
+        color: var(--white);
     }
 }

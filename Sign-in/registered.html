@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="registered.css">
+    <script src="https://kit.fontawesome.com/2c6d23848b.js" crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" href="footer.css"> -->
+</head>
+<body>
+    <!-- <div class="logo-box"> -->
+        <!-- <a class="logo" href="../index.html"><img src="../images/logo.png" alt=""></a> -->
+    <!-- </div> -->
+    <div class="all">
+        <a class="logo" href="../index.html"><img src="../images/logo.png" alt=""></a>
+        <div class="main">
+            <form class="form">          
+                    <h2>註冊會員</h2>
+                        <div class="group">
+                            <label for="account">帳號</label>
+                        </div>
+                        <div class="input-text" >
+                            <input  type="text" placeholder="" id="account" required >
+                        </div>
+                    <div class="group">
+                        <label for="password">密碼</label>
+                    </div>
+                    <div class="input-text" >
+                        <input  type="password" placeholder="" id="password" pattern="  [a-zA-z0-9]" required>
+                    </div>
+                    <div class="group">
+                        <label for="password1">確認密碼</label>
+                    </div>
+                    <div class="input-text" >
+                        <input type="password" placeholder="" id="password1" required>
+                    </div>
+            </form>
+            <form class="form">
+                    <div class="group">
+                        <label for="username">姓名</label>
+                    </div>
+                    <div class="input-text" >
+                    <input type="text" placeholder="" id=username>
+                    </div>
+                    <div class="group">
+                        <label for="">性別                            
+                    </div>
+                    <div class="radio-btn" >
+                        <input type="radio" name="gender" id="boy"><label for="boy">男</label>
+                        <input type="radio" name="gender" id="girl"> <label for="girl">女</label>
+                    </div>
+                    <div class="group">
+                        <label for="date">生日</label>
+                    </div>
+                    <div class="input-text">
+                    <input type="date" id="date">
+                    </div>
+                    <div class="group">
+                        <label for="email">信箱</label>
+                    </div>
+                    <div class="input-text" >
+                    <input type="email" id="email">
+                    </div>
+                    <div class="group">
+                        <label for="tel">行動電話</label>
+                    </div>
+                    <div class="input-text" >
+                    <input type="tel" id="tel">
+                    </div>
+                    <div class="group">
+                        <label for="address">地址</label>
+                    </div>
+                            <div class="city-box">
+                                <select name="city" id="city">
+                                    <option value="">請選擇</option>
+                                    <option value="基隆市">基隆市</option>
+                                    <option value="台北市">台北市</option>
+                                    <option value="新北市">新北市</option>
+                                    <option value="桃園市">桃園市</option>
+                                    <option value="新竹市">新竹市</option>
+                                    <option value="新竹縣">新竹縣</option>
+                                    <option value="苗栗縣">苗栗縣</option>
+                                    <option value="台中市">台中市</option>
+                                    <option value="彰化縣">彰化縣</option>
+                                    <option value="南投縣">南投縣</option>
+                                    <option value="雲林縣">雲林縣</option>
+                                    <option value="嘉義市">嘉義市</option>
+                                    <option value="嘉義縣">嘉義縣</option>
+                                    <option value="台南市">台南市</option>
+                                    <option value="高雄市">高雄市</option>
+                                    <option value="屏東縣">屏東縣</option>
+                                    <option value="台東縣">台東縣</option>
+                                    <option value="花蓮縣">花蓮縣</option>
+                                    <option value="宜蘭縣">宜蘭縣</option>
+                                    <option value="澎湖縣">澎湖縣</option>
+                                    <option value="金門縣">金門縣</option>
+                                    <option value="連江縣">連江縣</option>
+                                </select>
+                            </div>
+                        
+                    <div class="address">       
+                        <input type="text" id="address">
+                    </div>
+                    <div class="checkbox">
+                        <label for="">
+                            <input type="checkbox" id="query">
+                        </label>
+                        我同意提供以上個人資料連繫使用。您的個人資料受到嚴格控管，絕不做其他用途使  用。
+                    </div>
+                    <div class="btn-group">
+                        <button class="btn" id="registered" disabled>註冊</a>  
+                    </div>   
+            </form>
+        </div>
+    </div>
+    <script>
+        const registered = document.getElementById("registered");
+
+        function checkFn(){
+            let arr = [
+                document.getElementById("query")
+            ]
+            let check = arr.every(function(el){
+                return el.checked === true;
+            })
+            return check;
+        }
+        function changeFn(){
+            if(checkFn() === true){
+                registered.disabled = false;
+            }else{
+                registered.disabled = true;
+            }
+        }
+        document.getElementById("query").addEventListener("change", changeFn);
+        changeFn();
+
+        registered.addEventListener("click", function(){
+            alert("註冊成功");
+        })
+        // ----------------------------------------------------------
+
+    </script>
+</body>
+</html>

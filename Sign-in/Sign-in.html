@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Sign-in.css">
+</head>
+<body>
+    <div>
+        <a class="logo" href="../index.html"><img src="../images/logo.png" alt=""></a>
+    </div>
+    <div class="login">
+        <form class="form">
+            <h2>會員登入</h2>
+            <div class="group">
+                <label for="user_id">帳號</label>
+                <input type="text" id="user_id">
+            </div>
+            <div class="group">
+                <label for="user_password">密碼</label>
+                <input type="text" id="user_password">  
+            </div>
+            
+            <div class="btn-group">
+                <button class="btn" onclick="checkForm()">登入</button>     
+            </div>
+            <div class="account-password">
+                <div class="aa">   
+                <a href="#" class="number" name="no">忘記帳號</a>
+                <a href="#" name="wo">忘記密碼</a>
+                </div>
+                <div class="registered">
+                    <a href="registered.html" >註冊會員</a>
+                </div>
+            </div>
+            
+            
+            
+        </form>
+    </div>
+    <script>
+        function checkForm(){
+            if(user_id.value == "") 
+            {
+                alert("未輸入帳號");
+            }
+            else if(user_password.value == ""){
+                alert("未輸入密碼");
+            }
+            else{
+                alert("登入成功");
+            }
+        }
+    </script>
+</body>
+</html>
