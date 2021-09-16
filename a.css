@@ -306,19 +306,20 @@ h1{
 /* header end  */
 
 
-/* article contentPhone start */
+/* about contentPhone start */
 
-.article{
+.about{
     height: auto;
     width: 100%;
     position: relative;
     z-index: 50; 
+    padding-right: 100px;
 }
-.article-title{
+.about-title{
     position: relative;
     padding-bottom: 20px;
 }
-.article-title::after{
+.about-title::after{
     content: '';
     background: var(--light);
     width: 150px;
@@ -367,36 +368,20 @@ h1{
 #app a:hover{
     color: var(--light);
 }
-a#angleleft{
-    top:38%;
+#prev_btn{
+    top:45%;
     position: absolute;
-    left: 15%;
+    left: 5%;
 }
-a#angleright{
-    top:38%;
-    right: 15%;
+#next_btn{
+    top:45%;
+    right: 5%;
     position: absolute;
-}
 
-#app .menu{
-    width: 100%;
-    height: 20%;
-    overflow: auto;
 }
-#app .menu nav{
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
+#app{
+    padding-right: 100px;
 }
-#app .menu nav a{
-    cursor: pointer;
-    width: 20%;
-    height: 100%;
-}
-#app .menu nav a img{
-    width: 100%;
-    height: auto;
-} 
 #app #contentPhone{
     display: block;
     margin-top: 2%;
@@ -406,10 +391,11 @@ a#angleright{
     background-image: url("images/a1.png");
     background-size: cover;
     background-position: center;
+    position: relative;
 }
 
 
-/* article contentPhone end */
+/* about contentPhone end */
 
 /* hotelbar star */
 
@@ -419,6 +405,7 @@ a#angleright{
     color:var(--white);
     background-color: var(--blue);
     padding-bottom: 2%;
+    padding-right: 100px;
 }
 .hotelbar-title{
     font-size: 42px;
@@ -500,6 +487,7 @@ p{
     text-align: center;
     color: var(--white);
     padding-bottom: 2%;
+    padding-right: 100px;
 }
 .restaurant-video{
     height: 35vh;
@@ -527,7 +515,7 @@ p{
     width: 80%;
     margin: auto;
     justify-content: center;
-    flex-wrap: wrap;    
+    flex-wrap: wrap;   
 }
 
 
@@ -771,7 +759,6 @@ h3{
     .useful-links img{
         margin-top: 5px;       
     }
-
     .video{   
         width: 80%;
         margin: 25px;
@@ -781,8 +768,14 @@ h3{
         height: auto;
     }
  
-    /* article start */
-    .article .article-title{
+    .hotelbar{
+        padding-right: 0;
+    }
+    /* about start */
+    .about{
+        padding-right: 0;
+    }
+    .about .about-title{
         font-size: 34px;
     }
     .inner{
@@ -792,20 +785,24 @@ h3{
     }
     #app{
         height: 50vh;
+        padding-right: 0;
     }
     #app #contentPhone{
         width: 75%;
         height: 90%;
     }
 
-    #app #angleleft,
-    #app #angleright{
+    #app #prev_btn,
+    #app #next_btn{
         top: 45%;
         font-size: 10px;
     }
 
     .loader-container img{
         width: 500px;
+    }
+    .restaurant-bar{
+        padding-right: 0;
     }
 }
 
@@ -827,7 +824,7 @@ h3{
         width: 20px;;
     }
 
-    .article .article-title{
+    .about .about-title{
         font-size: 30px;
     }
 
@@ -846,18 +843,17 @@ h3{
         height: 100%;
     }
 
-    #app #angleleft,
-    #app #angleright{
+    #app #prev_btn,
+    #app #next_btn{
         top: 40%;
         font-size: 10px;
     }
-    #app #angleleft{
+    #app #prev_btn{
         left: 5%;
     }
-    #app #angleright{
+    #app #next_btn{
         right: 5%;
     }
-
     .col-2{
         width: 300px;
     }

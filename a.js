@@ -61,14 +61,14 @@ closeBtn.addEventListener("click", () => {
 
 const contentPhone = document.getElementById("contentPhone");
 
-const angleleft = document.getElementById("angleleft");
-const angleright = document.getElementById("angleright");
+const prev_btn = document.getElementById("prev_btn");
+const next_btn = document.getElementById("next_btn");
 
 let idx = 1; 
 let timebox = null;  //重製時間
 
-angleleft.addEventListener("click", leftFn);
-angleright.addEventListener("click", rightFn);
+prev_btn.addEventListener("click", leftFn);
+next_btn.addEventListener("click", rightFn);
 
 
 function leftFn(){
